@@ -22,4 +22,6 @@ header {
     text-decoration: none;
     transition: color 0.3s;
   }
-  
+  nav ul li a:hover {
+    color: #ffcc00;
+  } 
