@@ -5,5 +5,6 @@ header {
   }
 
   #searchBar{
-    padding: 20px;
+    padding: 8px;
+    border-radius: 10px;
   }
