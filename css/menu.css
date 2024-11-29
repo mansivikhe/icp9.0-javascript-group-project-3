@@ -8,3 +8,8 @@ header {
     padding: 8px;
     border-radius: 10px;
   }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
