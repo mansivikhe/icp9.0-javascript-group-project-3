@@ -9,7 +9,7 @@ header {
     border-radius: 10px;
   }
 
-  /* nav ul {
+   nav ul {
     list-style-type: none;
     padding: 0;
   }
@@ -24,27 +24,10 @@ header {
   }
   nav ul li a:hover {
     color: #ffcc00;
-  }  */
-  nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin-top: 30px;
-}
-nav ul li {
-    margin: 10px;
-    padding: 5px 10px;
-    font-size: 1rem;
-    border: 2px solid var(--golden);
-    border-radius: 5px;
-    color: var(--golden)
-}
-nav ul li:hover{
-    background-color: var(--golden);
-    color: white;
-}
+  }  
+  
 
-  /* .menu{
+  .menu{
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -62,4 +45,4 @@ nav ul li:hover{
     padding: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3 s;
-  } */
+  }
