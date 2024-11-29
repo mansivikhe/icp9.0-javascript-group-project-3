@@ -17,3 +17,9 @@ header {
     display: inline;
     margin: 0 15px;
   }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
