@@ -37,3 +37,11 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
   }
+
+  .menu-item {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3 s;
+  }
