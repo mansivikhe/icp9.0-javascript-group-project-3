@@ -29,24 +29,10 @@ const quantElement = document.getElementById('quantity');
         quantElement.innerText = --quantity;
         }
     }
-    const quantElement = document.getElementById('quantity1');
-    function inc()
-    {
-        let quantity = parseInt(quantElement.innerText);
-        quantElement.innerText = ++quantity;
-    }
-
-    function dec()
-    {
-        let quantity = parseInt(quantElement.innerText);
-        if(quantity>1)
-        {
-        quantElement.innerText = --quantity;
-        }
-    }
+ 
     
 
-    function openModel()
+function openModel()
 {
     const overlayElement = document.getElementById('overlay');
     overlayElement.style.display = 'flex';
@@ -56,6 +42,17 @@ function closeModel()
     const overlayElement = document.getElementById('overlay');
     overlayElement.style.display = 'none';
 }
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay1');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay1');
+    overlayElement.style.display = 'none';
+}
+
 function selectBox(addToCart){
     alert("Dish added to cart")
 }
@@ -89,6 +86,12 @@ function selectBox(addToCart9){
 function alertMsg()
 {
     const overlayElement = document.getElementById('overlay');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay1');
     overlayElement.style.display = 'none';
     alert("Congratulations🤩.Your order is on the way")
 }
