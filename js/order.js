@@ -29,6 +29,7 @@ const quantElement = document.getElementById('quantity');
         quantElement.innerText = --quantity;
         }
     }
+    
 
     function openModel()
 {
@@ -43,4 +44,10 @@ function closeModel()
 function selectBox(addToCart){
     alert("Dish added to cart")
 
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
 }
