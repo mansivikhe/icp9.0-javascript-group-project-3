@@ -6,3 +6,8 @@ openBtn.addEventListener("click", () => {
     sidebar.style.width = "250px"; 
     openBtn.style.display = "none";
   });
+//close sidebar
+  closeBtn.addEventListener("click", () => {
+    sidebar.style.width = "0"; 
+    openBtn.style.display = "block"; 
+  });
