@@ -268,8 +268,8 @@
                 <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
             </div>
             <button onclick="selectBox()" class="btn" id="addToCart5">Add To Cart</button>
-            <button onclick="" class="btn">Order Now</button>
-            <div class="overlay" id="overlay2">
+            <button onclick="openModel()" class="btn">Order Now</button>
+            <div class="overlay" id="overlay5">
                 <div class="model">
                     <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
                     <form class="form">
@@ -288,7 +288,7 @@
                         </datalist>
                     </form>
                     <div>
-                        <button type="button" class="btn1" id="overlay2" onclick="alertMsg()">
+                        <button type="button" class="btn1" id="overlay5" onclick="alertMsg()">
                             Proceed
                         </button>
                     </div>
@@ -305,7 +305,32 @@
                 <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
             </div>
             <button onclick="selectBox()" class="btn" id="addToCart6">Add To Cart</button>
-            <button onclick="" class="btn">Order Now</button>
+            <button onclick="openModel()" class="btn">Order Now</button>
+            <div class="overlay" id="overlay6">
+                <div class="model">
+                    <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
+                    <form class="form">
+                        <h1>Buy Now</h1>
+                        <input type="text" placeholder="Enter your name" class="form-input" />
+                        <input type="text" placeholder="Enter your phone number" class="form-input" />
+                        <input type="text" placeholder="Enter your address" class="form-input" />
+                        <input type="text" placeholder="Enter quantity" class="form-input" />
+                        <input type="text" placeholder="Select payment method" list="state" class="form-input" />
+                        <datalist id="state">
+                            <option>Phonepay</option>
+                            <option>Google Pay</option>
+                            <option>Credit Card</option>
+                            <option>Debit Card</option>
+                            <option>Cash on delivery</option>
+                        </datalist>
+                    </form>
+                    <div>
+                        <button type="button" class="btn1" id="overlay6" onclick="alertMsg()">
+                            Proceed
+                        </button>
+                    </div>
+                </div>
+                </div>
         </div>
         <div class="card-img">
             <img src="../img/chi-fried-rice.webp" class="img" />
