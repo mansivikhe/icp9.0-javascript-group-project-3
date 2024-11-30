@@ -18,8 +18,9 @@
         <p>Place your order and enjoy our food at home!</p>
     </main>
     <div class="center">
-            <a href="./veg.html"><button type="button" class="btn1">Veg</button> </a>
-            <a href="./non-veg.html"><button type="button" class="btn1">Non-Veg</button></a>
+        <button type="button" class="btn1">All</button>
+        <button type="button" class="btn1">Veg</button>
+        <button type="button" class="btn1">Non-Veg</button>
     </div>
 
     <i class="fa-solid fa-bars hamburger-menu" id="hamburger-menu" onclick="openSidebar()"></i>
@@ -28,20 +29,17 @@
             <i class="fa-solid fa-circle-xmark"></i>
         </div>
         <div class="menu">
-            <img src="../img/user (1).png"
-            height="40px"
-            width="40px"  
-            class="side">
-            </div>
+            <img src="../img/user (1).png" height="40px" width="40px" class="side">
+        </div>
         <div class="menu-item1">
             <h3 class="length">Welcome, Shradha Mane
                 Glad to see you again😊 <br>
             </h3>
         </div>
         <div class="menu-item1">
-               <h3 class="length1">Contact:9876543231
+            <h3 class="length1">Contact:9876543231
                 Address:Kothrud,Pune..
-               </h3>
+            </h3>
         </div>
         <div class="menu-item">
             <i class="fa-solid fa-house menu-icon"></i>
@@ -76,14 +74,13 @@
 
     <div class="card">
         <div class="card-img">
-            <img src="../img/pulao.jpg"
-                class="img" />
+            <img src="../img/pulao.jpg" class="img" />
             <h3 class="product-title">TITAN</h3>
             <p class="product-title">Price:4999/-</p>
             <div class="quantity-container">
                 <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
                 <span id="quantity">1</span>
-                <i class="fa-solid fa-plus quantity-icon"  onclick="inc()"></i>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
             </div>
             <button onclick="selectBox()" class="btn" id="addToCart">Add To Cart</button>
             <button onclick="openModel()" class="btn">Order Now</button>
@@ -92,27 +89,29 @@
                     <i class="fa-solid fa-circle-xmark close-icon" alt="Close" onclick="closeModel()"></i>
                     <form class="form">
                         <h1>Buy Now</h1>
-                        <input type="text" placeholder="Enter your name" class="form-input"/>
-                        <input type="text" placeholder="Enter your phone number" class="form-input"/>
-                        <input type="text" placeholder="Enter your address" class="form-input"/>
-                        <input type="text" placeholder="Enter quantity" class="form-input"/>
-                         <input type="text" placeholder="Select payment method" list="state"  class="form-input"/>
-                         <datalist id="state">
-                         <option>Phonepay</option>
-                        <option>Google Pay</option>
-                         <option>Credit Card</option>
-                          <option>Debit Card</option>
-                         <option>Cash on delivery</option>
-                       </datalist>
+                        <input type="text" placeholder="Enter your name" class="form-input" />
+                        <input type="text" placeholder="Enter your phone number" class="form-input" />
+                        <input type="text" placeholder="Enter your address" class="form-input" />
+                        <input type="text" placeholder="Enter quantity" class="form-input" />
+                        <input type="text" placeholder="Select payment method" list="state" class="form-input" />
+                        <datalist id="state">
+                            <option>Phonepay</option>
+                            <option>Google Pay</option>
+                            <option>Credit Card</option>
+                            <option>Debit Card</option>
+                            <option>Cash on delivery</option>
+                        </datalist>
                     </form>
                     <div>
                         <button type="button" class="btn1" id="overlay" onclick="alertMsg()">
                             Proceed
-                        </button> 
-                    </div></div></div></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="card-img">
-            <img src="../img/salad.jpg"
-                class="img" />
+            <img src="../img/salad.jpg" class="img" />
             <h3 class="product-title">TITAN</h3>
             <p class="product-title">Price:4999/-</p>
             <div class="quantity-container">
@@ -120,116 +119,108 @@
                 <span id="quantity1">1</span>
                 <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
             </div>
-            <button onclick="" class="btn">Add To Cart</button>
+            <button onclick="selectBox()" class="btn" id="addToCart1">Add To Cart</button>
             <button onclick="" class="btn">Order Now</button>
+        </div>
+        <div class="card-img">
+            <img src="../img/veggie-pasta.webp" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
             </div>
-    <div class="card-img">
-        <img src="../img/veggie-pasta.webp"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            <button onclick="selectBox()" class="btn" id="addToCart2">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
+        <div class="card-img">
+            <img src="../img/cooked-food.jpg" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart3">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-    <div class="card-img">
-        <img src="../img/cooked-food.jpg"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+        <div class="card-img">
+            <img src="../img/biryani1.webp" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart4">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
+        <div class="card-img">
+            <img src="../img/chicken-lollipop.jpg" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart5">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-    <div class="card-img">
-        <img src="../img/biryani1.webp"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+        <div class="card-img">
+            <img src="../img/kaju-masala.jpg" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart6">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
+        <div class="card-img">
+            <img src="../img/chi-fried-rice.webp" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart7">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-    <div class="card-img">
-        <img src="../img/chicken-lollipop.jpg"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+        <div class="card-img">
+            <img src="../img/veg-thali.jpg" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart8">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
-        </div>
-    <div class="card-img">
-        <img src="../img/kaju-masala.jpg"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
-        </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
-        </div>
-    <div class="card-img">
-        <img src="../img/chi-fried-rice.webp"
-        class="img"/>
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
-        </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
-   </div>
-    <div class="card-img">
-        <img src="../img/veg-thali.jpg"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
-        </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
-        </div>
-    <div class="card-img">
-        <img src="../img/non-veg-thali.jpg"
-            class="img" />
-        <h3 class="product-title">TITAN</h3>
-        <p class="product-title">Price:4999/-</p>
-        <div class="quantity-container">
-            <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
-            <span id="quantity">1</span>
-            <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
-        </div>
-        <button onclick="" class="btn">Add To Cart</button>
-        <button onclick="" class="btn">Order Now</button>
+        <div class="card-img">
+            <img src="../img/non-veg-thali.jpg" class="img" />
+            <h3 class="product-title">TITAN</h3>
+            <p class="product-title">Price:4999/-</p>
+            <div class="quantity-container">
+                <i class="fa-solid fa-minus quantity-icon" onclick="dec()"></i>
+                <span id="quantity">1</span>
+                <i class="fa-solid fa-plus quantity-icon" onclick="inc()"></i>
+            </div>
+            <button onclick="selectBox()" class="btn" id="addToCart9">Add To Cart</button>
+            <button onclick="" class="btn">Order Now</button>
         </div>
 
-    <div id="footer"></div>
-    <script src="https://kit.fontawesome.com/40b0ef9a69.js" crossorigin="anonymous"></script>
+        <div id="footer"></div>
+        <script src="https://kit.fontawesome.com/40b0ef9a69.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

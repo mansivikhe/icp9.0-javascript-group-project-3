@@ -29,6 +29,21 @@ const quantElement = document.getElementById('quantity');
         quantElement.innerText = --quantity;
         }
     }
+    const quantElement = document.getElementById('quantity1');
+    function inc()
+    {
+        let quantity = parseInt(quantElement.innerText);
+        quantElement.innerText = ++quantity;
+    }
+
+    function dec()
+    {
+        let quantity = parseInt(quantElement.innerText);
+        if(quantity>1)
+        {
+        quantElement.innerText = --quantity;
+        }
+    }
     
 
     function openModel()
@@ -43,7 +58,33 @@ function closeModel()
 }
 function selectBox(addToCart){
     alert("Dish added to cart")
-
+}
+function selectBox(addToCart1){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart2){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart3){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart4){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart5){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart6){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart7){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart8){
+    alert("Dish added to cart")
+}
+function selectBox(addToCart9){
+    alert("Dish added to cart")
 }
 function alertMsg()
 {
