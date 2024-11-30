@@ -102,7 +102,36 @@ function closeModel()
     const overlayElement = document.getElementById('overlay6');
     overlayElement.style.display = 'none';
 }
-
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay7');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay7');
+    overlayElement.style.display = 'none';
+}
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay8');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay8');
+    overlayElement.style.display = 'none';
+}
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay9');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay9');
+    overlayElement.style.display = 'none';
+}
 
 
 function selectBox(addToCart){
@@ -174,6 +203,24 @@ function alertMsg()
 function alertMsg()
 {
     const overlayElement = document.getElementById('overlay6');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay7');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay8');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay9');
     overlayElement.style.display = 'none';
     alert("Congratulations🤩.Your order is on the way")
 }
