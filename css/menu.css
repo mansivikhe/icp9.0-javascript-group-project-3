@@ -1,3 +1,25 @@
+/* Navbar styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(5, 5, 5);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e8280f;
+}
+
+/* Menu styling */
 .menu {
   max-width: 1200px;
   margin: 20px auto;
@@ -21,7 +43,7 @@
   transform: translateY(-5px);
 }
 
-/* Updated image styling */
+/* Image styling */
 .menu-image {
   width: 100%; 
   height: 200px; 
@@ -55,17 +77,6 @@ p {
 }
 
 /* Label styles */
-.offer-label,
-.promoted-label {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  padding: 5px 10px;
-  font-size: 12px;
-  border-radius: 4px;
-  color: #fff;
-}
-
 .offer-label {
   background-color: #007bff;
 }
