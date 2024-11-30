@@ -78,12 +78,12 @@ header {
 .open-btn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #625f5f;
+  background-color: #100f0f;
   color: white;
   padding: 10px 20px;
   border: none;
   position: fixed;
   top: 170px;
-  left: 20px;
+  left: 50px;
   border-radius: 10px;
 }
