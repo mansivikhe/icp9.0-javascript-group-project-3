@@ -76,6 +76,9 @@ p {
   font-weight: bold;
 }
 
+.price{
+  font-weight: bold;
+}
 /* Label styles */
 .offer-label {
   background-color: #007bff;
