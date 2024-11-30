@@ -40,3 +40,7 @@ function closeModel()
     const overlayElement = document.getElementById('overlay');
     overlayElement.style.display = 'none';
 }
+function selectBox(addToCart){
+    alert("Dish added to cart")
+
+}
