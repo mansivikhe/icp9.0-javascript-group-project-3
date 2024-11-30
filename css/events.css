@@ -15,3 +15,17 @@
 height: 650px;
 width: 1000px;
 }
+
+.direct-book{
+margin-top: 30px;
+  background-color:  #53132f;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+
