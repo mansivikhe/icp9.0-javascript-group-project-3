@@ -73,13 +73,15 @@ margin-top: 30px;
 }
 
 .container{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin: 50px 50px;
-    
-    
+    height: 400px;
+    width: 540px;
+    background-color:white;
+    border: 2px double rgb(222, 214, 214);
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 29px;
+    display:inline-block;
+   
 }
+
 
