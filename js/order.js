@@ -52,6 +52,38 @@ function closeModel()
     const overlayElement = document.getElementById('overlay1');
     overlayElement.style.display = 'none';
 }
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay2');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay2');
+    overlayElement.style.display = 'none';
+}
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay3');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay3');
+    overlayElement.style.display = 'none';
+}
+function openModel()
+{
+    const overlayElement = document.getElementById('overlay4');
+    overlayElement.style.display = 'flex';
+}
+function closeModel()
+{
+    const overlayElement = document.getElementById('overlay4');
+    overlayElement.style.display = 'none';
+}
+
+
 
 function selectBox(addToCart){
     alert("Dish added to cart")
@@ -92,6 +124,24 @@ function alertMsg()
 function alertMsg()
 {
     const overlayElement = document.getElementById('overlay1');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay2');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay3');
+    overlayElement.style.display = 'none';
+    alert("Congratulations🤩.Your order is on the way")
+}
+function alertMsg()
+{
+    const overlayElement = document.getElementById('overlay4');
     overlayElement.style.display = 'none';
     alert("Congratulations🤩.Your order is on the way")
 }
