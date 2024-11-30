@@ -3,9 +3,16 @@
   height: 500px;
 }
 .ourstory_container {
-   /* width: 1000px; */
- height: 500px;
+  
   background-color: brown;
   background-image: url("../img/restaurant-hall.jpg");
   background-size: contain;
+ height: 500px;
+ width: 1000px;
+  background-repeat: no-repeat; 
+}
+.sidebar{
+  background-color: tomato;
+  width: 200px;
+  height: 100vp;
 }
