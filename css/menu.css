@@ -27,7 +27,7 @@ header {
   }  
   
 
-  .menu{
+  /* .menu{
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -45,7 +45,84 @@ header {
     padding: 10px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3 s;
+  } */
+
+  .menu {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
+  
+  .menu-item {
+    position: relative;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+  }
+  
+  .menu-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .rating {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  /* Label styles */
+  .offer-label,
+  .promoted-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .offer-label {
+    background-color: #007bff;
+  }
+  
+  .promoted-label {
+    top: auto;
+    bottom: 10px;
+    background-color: #777;
+  }
+  
 
   /* Sidebar styling */
   .sidebar{
