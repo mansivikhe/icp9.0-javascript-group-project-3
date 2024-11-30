@@ -1,16 +1,4 @@
-const openBtn = document.getElementById("openBtn");
-const closeBtn = document.getElementById("closeBtn");
-const sidebar = document.getElementById("sidebar");
-//open sidebar
-openBtn.addEventListener("click", () => {
-    sidebar.style.width = "250px"; 
-    openBtn.style.display = "none";
-  });
-//close sidebar
-  closeBtn.addEventListener("click", () => {
-    sidebar.style.width = "0"; 
-    openBtn.style.display = "block"; 
-  });
+// sidebar
 
   //search image
   function filterMenu(category) {

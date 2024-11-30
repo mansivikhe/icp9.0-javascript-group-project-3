@@ -6,7 +6,7 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 35px;
 }
 
 nav ul li a {
@@ -16,7 +16,15 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #e8280f;
+  color: #040404;
+  font-weight: bold;
+}
+
+/* searchbar styling */
+#searchBar{
+   padding: 8px;
+   width: 220px;
+   border-radius: 15px;
 }
 
 /* Menu styling */
@@ -79,56 +87,5 @@ p {
 .price{
   font-weight: bold;
 }
-/* Label styles */
-.offer-label {
-  background-color: #007bff;
-}
-
-.promoted-label {
-  top: auto;
-  bottom: 10px;
-  background-color: #777;
-}
 
 /* Sidebar styling */
-.sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #625f5f;
-  color: white;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar .close-btn {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.main-content {
-  padding: 20px;
-  margin-left: 20px;
-}
-
-.open-btn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #100f0f;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  position: fixed;
-  top: 170px;
-  left: 50px;
-  border-radius: 10px;
-}
