@@ -1,0 +1,11 @@
+.restaurant-hall-img {
+  width: 900px;
+  height: 500px;
+}
+.ourstory_container {
+   /* width: 1000px; */
+ height: 500px;
+  background-color: brown;
+  background-image: url("../img/restaurant-hall.jpg");
+  background-size: contain;
+}
