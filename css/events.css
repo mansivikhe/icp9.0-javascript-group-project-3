@@ -47,7 +47,7 @@ margin-top: 30px;
 .business{
     height: 250px;
     width: 400px;
-    margin: 30px 10px 10px 30px;
+    margin: 50px 50px;
 }
 
 .dinner{
@@ -59,16 +59,27 @@ margin-top: 30px;
 .party{
     height: 250px;
     width: 400px;
-    margin: 50px 50px;
+    margin:50px 50px ;
 }
 
 .private{
     height: 250px;
     width: 400px;
-    margin: 50px 50px;
+    margin:50px 50px;
 }
 
 .text-centre1{
     text-align: center;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    
+    
 }
 
