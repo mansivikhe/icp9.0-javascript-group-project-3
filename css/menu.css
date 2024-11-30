@@ -60,3 +60,14 @@ header {
     transition: 0.5s;
     padding-top: 60px;
   }
+
+  .sidebar .close-btn {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
