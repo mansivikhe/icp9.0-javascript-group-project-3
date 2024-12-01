@@ -32,3 +32,31 @@ function searchMenu() {
         }
     });
 }
+
+// Carousel JS
+let currentSlide = 0;
+
+function updateCarousel() {
+    const carousel = document.querySelector('.carousel');
+    const slides = document.querySelectorAll('.carousel-item');
+    const totalSlides = slides.length;
+
+    // Calculate new transform value
+    const offset = -currentSlide * 100; // Each slide is 100% width
+    carousel.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    const slides = document.querySelectorAll('.carousel-item');
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+}
+
+function prevSlide() {
+    const slides = document.querySelectorAll('.carousel-item');
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+}
+
+// Auto-slide every 3 seconds
+setInterval(nextSlide, 3000);
