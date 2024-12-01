@@ -61,9 +61,9 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    justify-items: center; /* This centers the items horizontally */
-    align-items: center;   /* This centers the items vertically */
-    margin-top: 50px;      /* Add space at the top */
+    justify-items: center; 
+    align-items: center;   
+    margin-top: 50px;  
 }
 
 .card {
@@ -76,8 +76,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%; /* Ensures that cards maintain the grid layout */
-    max-width: 250px; /* Restrict card size to ensure consistent appearance */
+    width: 100%; 
+    max-width: 250px; 
 }
 
 .card img {
