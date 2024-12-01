@@ -37,25 +37,25 @@ function searchMenu() {
 let currentSlide = 0;
 
 function updateCarousel() {
-    const carousel = document.querySelector('.carousel');
-    const slides = document.querySelectorAll('.carousel-item');
-    const totalSlides = slides.length;
+  const carousel = document.querySelector('.carousel');
+  const slides = document.querySelectorAll('.carousel-item');
+  const totalSlides = slides.length;
 
-    const offset = -currentSlide * 100; 
-    carousel.style.transform = `translateX(${offset}%)`;
+  const offset = -currentSlide * 100; // Each slide is 100% width
+  carousel.style.transform = `translateX(${offset}%)`;
 }
 
 function nextSlide() {
-    const slides = document.querySelectorAll('.carousel-item');
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateCarousel();
+  const slides = document.querySelectorAll('.carousel-item');
+  currentSlide = (currentSlide + 1) % slides.length;
+  updateCarousel();
 }
 
 function prevSlide() {
-    const slides = document.querySelectorAll('.carousel-item');
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    updateCarousel();
+  const slides = document.querySelectorAll('.carousel-item');
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  updateCarousel();
 }
 
-// Auto-slide every 3 seconds
+// Auto-slide every 5 seconds
 setInterval(nextSlide, 3000);
