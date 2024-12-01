@@ -6,7 +6,7 @@
     <title>Food Restaurant - Events</title>
     <link rel="stylesheet" href="./../css/index.css">
     <link rel="stylesheet" href="./../css/events.css">
-    <script src="/js/events.js" ></script>
+    <script src="./../js/events.js" ></script>
     <script src="/js/index.js" defer></script>
 </head>
 <body>
@@ -20,18 +20,29 @@
         <button class="inquire-now" onclick="openModel()">INQUIRE NOW</button>
         <div class="overlay" id="overlay">
             <div class="model">
-                <img src="./img/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
+                <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
                 <form class="form">
-                    <h1 class="form-header">Enroll Now</h1>
-                    <input type="text" placeholder="Enter your name" class="form-input"/>
+                    <h1 class="form-header">
+                        Your Contact Information</h1>
+                        
+                        <input type="email" placeholder="Enter your email" class="form-input"/>
                     <input type="email" placeholder="Enter your email" class="form-input"/>
                     <input type="text" placeholder="Enter your phone number" class="form-input"/>
-                    <input type="text" placeholder="College/School name" class="form-input"/>
+                    <p>In order to submit your personal information you must agree to and accept the terms of Tripleseat's privacy policy.</p>
                 </form>
-                <button type="button" class="btn">Proced to Payment</button>
+                <h1>Your Event Details</h1>
+                
+                <input type="email" placeholder="Enter your event date" class="form-input"/>
+                <p>Start Time & End Time</p>
+                <input type="email" placeholder="6:00pm - 9:00pm" class="form-input"/>
+                
+                
+                <input type="email" placeholder="No. of people" class="form-input"/>
+                
+                <button type="button" class="btn">Submit</button>
             </div>
         </div>
-        <script src="./../js/events.js"></script>
+        
     </body>
         <p>Stay updated on our latest events and activities!</p>
         <div class="container">
