@@ -162,5 +162,24 @@ h1 {
     color: white;
     text-decoration: none;
 }
+/* container-3 */
+.container-3{
+  height: 450px;
+  width: 100vw;
+  margin-bottom: 10px;
+  display: flex;
+ }
+ .right-box{
+  height: 450px;
+  width: 35%;
+  margin-left: 200px;
+  background-color: rgb(227, 224, 224);
+ }
+ .left-box{
+  height: 450px;
+  width: 35%;
+  margin-left: 10px;
+ }
+    
 
 
