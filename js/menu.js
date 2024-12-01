@@ -41,8 +41,7 @@ function updateCarousel() {
     const slides = document.querySelectorAll('.carousel-item');
     const totalSlides = slides.length;
 
-    // Calculate new transform value
-    const offset = -currentSlide * 100; // Each slide is 100% width
+    const offset = -currentSlide * 100; 
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
