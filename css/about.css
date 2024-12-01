@@ -105,5 +105,42 @@ p {
   text-align: center;
 }
 .burgerimg {
+  margin: 10px;
   width: 540px;
+  border-radius: 20px;
+}
+.conitainer {
+  display: block;
+  margin: 20px auto;
+  width: fit-content;
+  margin: 50px auto;
+  position: relative;
+}
+.img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.icon {
+  height: 35px;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5;
+  top: 42%;
+}
+
+.backimg {
+  height: 43px;
+  left: 0;
+}
+.nextimg {
+  height: 35px;
+  right: 0;
+}
+.backimg:hover {
+  transform: scale(0.9) translateX(-8px);
+}
+.nextimg:hover {
+  transform: scale(0.9) translateX(8px);
 }
