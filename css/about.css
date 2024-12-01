@@ -18,6 +18,11 @@ body {
   width: 600px;
   padding: 20px;
   text-align: center;
+  font-size: 20px;
+  background-color: whitesmoke;
+}
+p {
+  line-height: 1.6;
 }
 .ourstory {
   background-image: url("../img/restaurant-hall.jpg");
