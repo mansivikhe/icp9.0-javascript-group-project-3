@@ -112,4 +112,55 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
+/* container-2 */
+.container-2{
+    height: 460px;
+    width: 100vw;
+    display: flex;    
+}
+.img-box{
+    height: 450px;
+    width: 35%;
+    margin-left: 200px;
+    background-color: aliceblue;   
+}
+.content-box{
+    height: 450px;
+    width: 35%;
+    margin-left: 10px;
+    background-color: rgb(227, 224, 224);
+}
+.content-img{
+    height: 450px;
+    width: 538px;  
+}
+.content-img:hover{
+    cursor: pointer;
+    height: 400px;
+    width: 500px;
+    transition: 1s;
+}
+.Content-image{
+    margin-top: 130px;
+    margin-left: 120px;
+}
+.content-btn{
+    margin-left: 190px;
+    padding: 10px 30px;
+    margin-top: 5px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    background-color:#322C2B;
+}
+.content-btn:hover{
+    background-color: #AF8260;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-des{
+    color: white;
+    text-decoration: none;
+}
+
 
