@@ -38,3 +38,14 @@ function back1() {
 //   window.next1 = next1;
 //   window.back1 = back1;
 // });
+function localstoragesend() {
+  alert("Thank You for visiting!");
+  const name = document.getElementById("name").value;
+  localStorage.setItem("name", name);
+  const email = document.getElementById("email").value;
+  localStorage.setItem("email", email);
+  const contact = document.getElementById("contact").value;
+  localStorage.setItem("mobile", contact);
+  const message = document.getElementById("message").value;
+  localStorage.setItem("message", message);
+}

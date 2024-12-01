@@ -105,6 +105,46 @@
         onclick="next1()"
       />
     </div>
+    <form class="contact-form" action="submit_form.php" method="POST">
+      <h2 class="heading-center">Contact Us</h2>
+      <label for="name">Name*</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+
+      <label for="email">Email*</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Your Email"
+        required
+      />
+
+      <label for="email">Mobile Number*</label>
+      <input
+        type="number"
+        id="contact"
+        name="mobile"
+        placeholder="Mobile Number"
+        required
+      />
+
+      <label for="message">Your Message*</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Your Message"
+        rows="5"
+        required
+      ></textarea>
+
+      <button type="submit" onclick="localstoragesend()">Send</button>
+    </form>
     <div class="contact_container">
       <a href="contact.html" class="contact">Contact</a>
     </div>

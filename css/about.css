@@ -156,3 +156,48 @@ p {
   color: black;
   cursor: pointer;
 }
+.heading-center {
+  text-align: center;
+}
+.contact-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+}
+.contact-form:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.contact-form button {
+  background: #d33f49;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background: #b32e37;
+}
