@@ -84,14 +84,26 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 60px 60px auto;
-  background-color: green;
+  margin: 70px 70px auto;
+  background-color: white;
 }
 .burger_def {
-  width: 50%;
+  width: 45%;
   height: 300px;
-  background-color: bisque;
+  background-color: #f6f6ee;
+  text-align: center;
+  margin: 10px;
+}
+.burger-heading {
+  text-decoration: overline;
+  text-decoration: underline;
+}
+.burger_text {
+  line-height: 1.5;
+  font-size: 17px;
+  margin: 12px;
+  text-align: center;
 }
 .burgerimg {
-  width: 500px;
+  width: 540px;
 }
