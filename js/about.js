@@ -1,7 +1,7 @@
 const sidebarelement = document.getElementById("sidebar");
 function opensidebar() {
-  alert("open");
+  sidebarelement.style.visibility = "visible";
 }
 function close() {
-  alert("close");
+  sidebarelement.style.visibility = "hiddedn";
 }
