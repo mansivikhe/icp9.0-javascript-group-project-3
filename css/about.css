@@ -22,25 +22,27 @@ body {
   background-color: whitesmoke;
 }
 p {
-  line-height: 1.6;
+  line-height: 1.5;
 }
 .ourstory {
   background-image: url("../img/restaurant-hall.jpg");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 80%;
   height: 450px;
   align-items: center;
   justify-content: center;
   position: relative;
+  margin: 50px 50px;
 }
 
 .overlay-text {
   font-size: 48px;
   font-weight: bold;
   color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
   text-align: center;
+  margin-top: 100px;
 }
 
 .hamburger {
