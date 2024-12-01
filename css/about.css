@@ -144,3 +144,9 @@ p {
 .nextimg:hover {
   transform: scale(0.9) translateX(8px);
 }
+.contact_container {
+  position: fixed;
+  right: 30px;
+  bottom: 0px;
+  
+}
