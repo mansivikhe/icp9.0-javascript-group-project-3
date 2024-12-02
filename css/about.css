@@ -310,19 +310,26 @@ p {
   /* height: 500px; */
   display: block;
   margin: 20px auto;
+  margin-top: 40px;
   text-align: center;
+}
+.read_container:hover {
+  transform: scale(1.1);
+  transition: 2s;
+
 }
 .rea_def {
   text-decoration: none;
   color: black;
-  text-shadow: 1px 2px 2px orangered;
+  /* text-shadow: 1px 2px 2px black; */
   cursor: pointer;
-  font-size: 30px;
+  font-size: 25px;
 }
 .read {
   display: block;
-  margin: 30px auto;
+  margin-top: 30px auto;
 }
 .clickhere {
-  width: 60px;
+  width: 40px;
+  padding: 2px;
 }

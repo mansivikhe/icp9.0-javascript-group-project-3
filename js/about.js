@@ -6,6 +6,20 @@
 //   sidebarelement.style.visibility = "hiddedn";
 // }
 // document.addEventListener("DOMContentLoaded", () => {
+function read() {
+  let overlayid = document.getElementById("overlayid");
+  overlayid.style.display = "flex";
+}
+function closeModel() {
+  overlayid.style.display = "none";
+}
+function acceptBtn() {
+  alert("Thank you for visiting !...");
+  overlayid.style.display = "none";
+}
+function dectBtn() {
+  overlayid.style.display = "none";
+}
 let imgArray1 = [
   "../img/restaurant-hall",
   "../img/christmas.jpg",
@@ -23,24 +37,12 @@ console.log(slide1);
 function nextSlide() {
   if (index < imgArray1.length - 1) {
     index++;
-    let overlayid = document.getElementById("overlayid");
-    overlayid.style.display = "flex";
   } else {
     index = 0;
   }
   slide1.src = imgArray1[index];
 }
-function closeModel() {
-  overlayid.style.display = "none";
-}
-function acceptBtn() {
-  alert("Thank you for visiting !...");
-  overlayid.style.display = "none";
-}
-function dectBtn() {
-  
-  overlayid.style.display = "none";
-}
+
 function prevSlide() {
   if (index > 0) {
     index--;
