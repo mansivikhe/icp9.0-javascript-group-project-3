@@ -14,33 +14,63 @@
     <main>
         <h1>🍽️ Book Your Table of Joy! 😊🍷</h1>
         <p>Let's make your day extra special! Fill in the details below and we'll save the best seat for you. 😊</p>
-        <form action="#" method="post" class="reservation-form">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your enchanted name ✨" required>
+    
+        <!-- Reservation Categories Section -->
+        <p class="subtitle">Choose a category to reserve your spot:</p>
+        <div class="categories">
+            <div class="category-card">
+                <a href="javascript:void(0);" class="category-link" onclick="openForm('menuForm')">🍽️ Menu Reservation</a>
+                <button class="btn card-btn" onclick="openForm('menuForm')">Book Now</button>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Your magical email 📧" required>
+            <div class="category-card">
+                <a href="javascript:void(0);" class="category-link" onclick="openForm('orderForm')">🛍️ Order Online Pickup</a>
+                <button class="btn card-btn" onclick="openForm('orderForm')">Order Now</button>
             </div>
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Your contact number 📞" required>
+            <div class="category-card">
+                <a href="javascript:void(0);" class="category-link" onclick="openForm('eventForm')">🎉 Events Reservation</a>
+                <button class="btn card-btn" onclick="openForm('eventForm')">Reserve Event</button>
             </div>
-            <div class="form-group">
-                <label for="date">Reservation Date</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="time">Reservation Time</label>
-                <input type="time" id="time" name="time" required>
-            </div>
-            <div class="form-group">
-                <label for="guests">Number of Guests</label>
-                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="How many happy tummies? 🍽️" required>
-            </div>
-            <button type="submit" class="btn">✨ Reserve Now ✨</button>
-        </form>
+        </div>
+        
+        <!-- Hidden Forms -->
+        <div id="menuForm" class="reservation-form" style="display: none;">
+            <h2>Menu Reservation</h2>
+            <form onsubmit="return handleSubmit('menuForm')">
+                <input type="text" id="menu-name" placeholder="Enter your name" required />
+                <input type="email" id="menu-email" placeholder="Enter your email" required />
+                <input type="tel" id="menu-phone" placeholder="Enter your phone number" required />
+                <input type="date" id="menu-date" required />
+                <input type="time" id="menu-time" required />
+                <input type="number" id="menu-guests" placeholder="Number of guests" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div id="orderForm" class="reservation-form" style="display: none;">
+            <h2>Order Pickup</h2>
+            <form onsubmit="return handleSubmit('orderForm')">
+                <input type="text" id="order-name" placeholder="Enter your name" required />
+                <input type="email" id="order-email" placeholder="Enter your email" required />
+                <input type="tel" id="order-phone" placeholder="Enter your phone number" required />
+                <input type="date" id="order-date" required />
+                <input type="time" id="order-time" required />
+                <input type="number" id="order-guests" placeholder="Number of guests" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div id="eventForm" class="reservation-form" style="display: none;">
+            <h2>Event Reservation</h2>
+            <form onsubmit="return handleSubmit('eventForm')">
+                <input type="text" id="event-name" placeholder="Enter your name" required />
+                <input type="email" id="event-email" placeholder="Enter your email" required />
+                <input type="tel" id="event-phone" placeholder="Enter your phone number" required />
+                <input type="date" id="event-date" required />
+                <input type="time" id="event-time" required />
+                <input type="number" id="event-guests" placeholder="Number of guests" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
     <div id="footer"></div>
 </body>
