@@ -7,15 +7,69 @@
     <link rel="icon" type="image/png" href="/img/Logo.png">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/reservation.css">
-    <script src="/js/reservation.js" ></script>
+    <script src="/js/reservation.js" defer></script>
     <script src="/js/index.js" defer></script>
 </head>
 <body>
     <div id="navbar"></div>
     <main>
-        <h1>Make a Reservation</h1>
-        <p>Book a table at our restaurant easily!</p>
-        <!-- Add reservation form here -->
+        <h1>🍽️ Book Your Table of Joy! 😊🍷</h1>
+        <p>Let's make your day extra special! Fill in the details below and we'll save the best seat for you. 😊</p>
+
+        <p class="subtitle">Choose a category to reserve your spot:</p>
+        <div class="categories">
+            <div class="category-card">
+                <a href="javascript:void(0);" class="category-link" onclick="openForm('menuForm')">🍽️ Menu Reservation</a>
+                <button class="btn card-btn" onclick="openForm('menuForm')">Book Now</button>
+            </div>
+            <div class="category-card">
+                <a href="javascript:void(0);" class="category-link" onclick="openForm('orderForm')">🛍️ Order Online Pickup</a>
+                <button class="btn card-btn" onclick="openForm('orderForm')">Order Now</button>
+            </div>
+            <div class="category-card">
+                <a href="javascript:void(0);" class="category-link" onclick="openForm('eventForm')">🎉 Events Reservation</a>
+                <button class="btn card-btn" onclick="openForm('eventForm')">Reserve Event</button>
+            </div>
+        </div>
+        
+        <div id="menuForm" class="reservation-form" style="display: none;">
+            <h2>Menu Reservation</h2>
+            <form onsubmit="return handleSubmit('menuForm')">
+                <input type="text" id="menu-name" placeholder="Enter your name" required />
+                <input type="email" id="menu-email" placeholder="Enter your email" required />
+                <input type="tel" id="menu-phone" placeholder="Enter your phone number" required />
+                <input type="date" id="menu-date" required />
+                <input type="time" id="menu-time" required />
+                <input type="number" id="menu-guests" placeholder="Number of guests" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div id="orderForm" class="reservation-form" style="display: none;">
+            <h2>Order Pickup</h2>
+            <form onsubmit="return handleSubmit('orderForm')">
+                <input type="text" id="order-name" placeholder="Enter your name" required />
+                <input type="email" id="order-email" placeholder="Enter your email" required />
+                <input type="tel" id="order-phone" placeholder="Enter your phone number" required />
+                <input type="date" id="order-date" required />
+                <input type="time" id="order-time" required />
+                <input type="number" id="order-guests" placeholder="Number of guests" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div id="eventForm" class="reservation-form" style="display: none;">
+            <h2>Event Reservation</h2>
+            <form onsubmit="return handleSubmit('eventForm')">
+                <input type="text" id="event-name" placeholder="Enter your name" required />
+                <input type="email" id="event-email" placeholder="Enter your email" required />
+                <input type="tel" id="event-phone" placeholder="Enter your phone number" required />
+                <input type="date" id="event-date" required />
+                <input type="time" id="event-time" required />
+                <input type="number" id="event-guests" placeholder="Number of guests" required />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
     <div id="footer"></div>
 </body>
