@@ -18,7 +18,7 @@ let slide1 = document.getElementById("imgslide");
 console.log(slide1);
 console.log(slide1);
 console.log(slide1);
-function next1() {
+function nextSlide() {
   if (index < imgArray1.length - 1) {
     index++;
   } else {
@@ -27,7 +27,7 @@ function next1() {
   slide1.src = imgArray1[index];
 }
 
-function back1() {
+function prevSlide() {
   if (index > 0) {
     index--;
   } else {
@@ -35,7 +35,6 @@ function back1() {
   }
   slide1.src = imgArray1[index];
 }
-
 
 function localstoragesend() {
   const name = document.getElementById("name").value;
