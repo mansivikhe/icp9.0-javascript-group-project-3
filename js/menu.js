@@ -24,7 +24,7 @@ function searchMenu() {
     const menuItems = document.querySelectorAll('.menu-item');
 
     menuItems.forEach(item => {
-        const itemName = item.querySelector('h3').textContent.toLowerCase(); // Changed h2 to h3
+        const itemName = item.querySelector('h3').textContent.toLowerCase(); 
         if (itemName.includes(searchInput)) {
             item.style.display = 'block';
         } else {
@@ -41,7 +41,7 @@ function updateCarousel() {
   const slides = document.querySelectorAll('.carousel-item');
   const totalSlides = slides.length;
 
-  const offset = -currentSlide * 100; // Each slide is 100% width
+  const offset = -currentSlide * 100; 
   carousel.style.transform = `translateX(${offset}%)`;
 }
 

@@ -29,7 +29,7 @@ nav ul li a:hover {
 
 /* Menu styling */
 .menu {
-  max-width: 1200px;
+  max-width: 500px;
   margin: 20px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
