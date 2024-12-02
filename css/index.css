@@ -15,11 +15,12 @@ body {
 }
 
 .navbar-container {
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left:40px;
 }
 
 .navbar-logo {
@@ -31,6 +32,7 @@ body {
 .navbar-links {
     display: flex;
     gap: 20px; 
+    
 }
 
 .navbar-links a {
