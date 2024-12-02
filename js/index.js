@@ -62,7 +62,7 @@ document.getElementById("footer").innerHTML = `
             </div>
         </div>
     <footer class="footer">
-        <p>&copy; 2024 Food Restaurant. All rights reserved.</p>
+        <p>&copy; 2024 HOT N' Fast Restaurant. All rights reserved.</p>
     </footer>
 `;
 
