@@ -33,6 +33,14 @@ function nextSlide() {
 function closeModel() {
   overlayid.style.display = "none";
 }
+function acceptBtn() {
+  alert("Thank you for visiting !...");
+  overlayid.style.display = "none";
+}
+function dectBtn() {
+  
+  overlayid.style.display = "none";
+}
 function prevSlide() {
   if (index > 0) {
     index--;
