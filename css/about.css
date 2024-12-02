@@ -305,3 +305,20 @@ p {
 #acceptBtn {
   background-color: orange;
 }
+.read_container {
+  width: 500px;
+  /* height: 500px; */
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+.rea_def {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-size: 20px;
+}
+.read {
+  display: block;
+  margin: 30px auto;
+}
