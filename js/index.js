@@ -6,6 +6,7 @@ document.getElementById("navbar").innerHTML = `
             <a href="../index.html">Home</a>
             <a href="/pages/menu.html">Menu</a>
             <a href="/pages/about.html">About Us</a>
+            <a href="/pages/offers.html">Offers</a>
             <a href="/pages/order.html">Order Online</a>
             <a href="/pages/reviews.html">Reviews</a>
             <a href="/pages/events.html">Events</a>
