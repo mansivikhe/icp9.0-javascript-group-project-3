@@ -36,10 +36,7 @@ function back1() {
   slide1.src = imgArray1[index];
 }
 
-//   // Attach functions to global scope if using inline event handlers
-//   window.next1 = next1;
-//   window.back1 = back1;
-// });
+
 function localstoragesend() {
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
