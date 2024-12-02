@@ -254,6 +254,7 @@ p {
 .overlay {
   width: 100%;
   height: 100%;
+  display: none;
 }
 .cookies-container {
   display: flex;
@@ -291,7 +292,4 @@ p {
 }
 #acceptBtn {
   background-color: orange;
-}
-#acceptBtn:hover {
-  background-color: white;
 }

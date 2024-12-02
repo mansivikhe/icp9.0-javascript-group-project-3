@@ -18,9 +18,13 @@ let slide1 = document.getElementById("imgslide");
 console.log(slide1);
 console.log(slide1);
 console.log(slide1);
+// let nextSlide = document.getElementById("nextSlide");
+// let main_container = document.getElementById("main_container");
 function nextSlide() {
   if (index < imgArray1.length - 1) {
     index++;
+    let overlayid = document.getElementById("overlayid");
+    overlayid.style.display = "flex";
   } else {
     index = 0;
   }
