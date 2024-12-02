@@ -4,18 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Restaurant - Events</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/events.css">
-    <script src="/js/events.js" ></script>
+    <link rel="stylesheet" href="./../css/index.css">
+    <link rel="stylesheet" href="./../css/events.css">
+    <script src="./../js/events.js" ></script>
     <script src="/js/index.js" defer></script>
 </head>
 <body>
     <div id="navbar"></div>
     <main>
-        <h1>Upcoming Events</h1>
+        <h1> Our Upcoming Events</h1>
+        
+        <img src="./../img/event/rehearsal-dinners.webp" class="img1" />
+        <p class="heading">If you have a specific date in mind and are planning a standard event, you may choose to DIRECT BOOK. Otherwise, to discuss availability, pricing, and other specific needs, please choose INQUIRE NOW and we’ll be in touch soon. </p>
+        <button class="direct-book">DIRECT BOOK</button>
+        <button class="inquire-now" onclick="openModel()">INQUIRE NOW</button>
+        <div class="overlay" id="overlay">
+            <div class="model">
+                <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
+                <form class="form">
+                    <h1 class="form-header">
+                        Your Contact Information</h1>
+                        
+                        <input type="email" placeholder="Enter your email" class="form-input"/>
+                    <input type="email" placeholder="Enter your email" class="form-input"/>
+                    <input type="text" placeholder="Enter your phone number" class="form-input"/>
+                    <p>In order to submit your personal information you must agree to and accept the terms of Tripleseat's privacy policy.</p>
+                </form>
+                <h1>Your Event Details</h1>
+                
+                <input type="email" placeholder="Enter your event date" class="form-input"/>
+                <p>Start Time & End Time</p>
+                <input type="email" placeholder="6:00pm - 9:00pm" class="form-input"/>
+                
+                
+                <input type="email" placeholder="No. of people" class="form-input"/>
+                
+                <button type="button" class="btn">Submit</button>
+            </div>
+        </div>
+        
+    </body>
         <p>Stay updated on our latest events and activities!</p>
+        <div class="container">
+        <img src="./../img/event/business events.jpg" class="business" />
+        <h3><i> <u>BUSINESS EVENTS </u></i></h3>
+    <p> Our Restaurant can host a variety of business events, including corporate events, conferences, and board meetings. </p></div>
+    
+        <div class="container">
+        <img src="./../img/event/dinner.jpg" class="dinner"/> 
+        <h3><i><u>DINNER EVENTS</u></i></h3>
+        <p>In modern use dinner and supper both usually refer to the main meal of the day eaten in the evening, with dinner being the slightly more formal word. </p>
+    </div>
+    
+        <div class="container">
+        <img src="./../img/event/party.jpg" class="party"/>
+        <h3><i><u>PARTY EVENTS</u></i></h3>
+        <p>A casual event where guests can play board games while enjoying snacks and drinks</p></div>
+    
+        <div class="container">
+        <img src="./../img/event/private events.jpg" class="private"/>
+        <h3><i><u>PRIVATE EVENTS</u></i></h3>
+    <p>Private dining offers a customizable experience with personalized service, and the ability to tailor the menu and ambiance to your preferences. </p></div>
+    
+        <div class="container">
+            <img src="./../img/event/wedding.jpg" class="wedding"/>
+            <p>WEDDING EVENTS</p></div>
+        
+            <div class="container">
+                <img src="./../img/event/baby shower.jpg" class="baby-shower"/>
+                <p>BABY SHOWER EVENTS</p></div>
+            
+
+        
         <!-- Add event details here -->
     </main>
     <div id="footer"></div>
-</body>+
+</body>
 </html>
