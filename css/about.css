@@ -215,55 +215,38 @@ p {
 .contact-form button:hover {
   background: #b32e37;
 }
-.carousel-container {
+.conitainer {
+  width: fit-content;
+  margin: 50px auto;
   position: relative;
-  width: 100%;
-  margin: 20px auto;
-  width: 800px;
-  overflow: hidden;
-  border-radius: 10px;
 }
-
-.carousel {
-  display: flex;
-  /* transition: transform 0.5s ease-in-out; */
-}
-
-.carousel-item {
-  width: 800px;
-  /* box-sizing: border-box; */
-}
-
-.carousel-item img {
+.img {
   width: 800px;
   height: 500px;
   object-fit: cover;
+  border-radius: 20px;
 }
-
-.carousel-control {
+.icon {
+  height: 55px;
   position: absolute;
-  top: 50%;
-  /* transform: translateY(-50%); */
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  font-size: 1.2rem;
-  padding: 10px 20px;
   cursor: pointer;
-  /* z-index: 1000; */
-  border-radius: 50%;
+  transition: 1.2;
+  top: 42%;
 }
 
-.carousel-control.prev {
-  left: 10px;
+.backimg {
+  height: 43px;
+  left: 0;
 }
-
-.carousel-control.next {
-  right: 10px;
+.nextimg {
+  height: 35px;
+  right: 0;
 }
-
-.carousel-control:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.backimg:hover {
+  transform: scale(0.9) translateX(-8px);
+}
+.nextimg:hover {
+  transform: scale(0.9) translateX(8px);
 }
 .overlay {
   background-color: rgb(0, 0, 0, 0.5);

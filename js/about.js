@@ -20,36 +20,31 @@ function acceptBtn() {
 function dectBtn() {
   overlayid.style.display = "none";
 }
-let imgArray1 = [
-  "../img/restaurant-hall",
+
+const imgarray = [
+  "../img/restaurant-hall.jpg",
   "../img/christmas.jpg",
   "../img/hygin.jpg",
   "../img/buger.jpg",
   "../img/img3.jpg",
 ];
 let index = 0;
-let slide1 = document.getElementById("imgslide");
-console.log(slide1);
-console.log(slide1);
-console.log(slide1);
-// let nextSlide = document.getElementById("nextSlide");
-// let main_container = document.getElementById("main_container");
-function nextSlide() {
-  if (index < imgArray1.length - 1) {
+const slide = document.getElementById("slide");
+function next() {
+  if (index < imgarray.length - 1) {
     index++;
   } else {
     index = 0;
   }
-  slide1.src = imgArray1[index];
+  slide.src = imgarray[index];
 }
-
-function prevSlide() {
+function back() {
   if (index > 0) {
     index--;
   } else {
-    index = imgArray1.length - 1;
+    index = imgarray.length - 1;
   }
-  slide1.src = imgArray1[index];
+  slide.src = imgarray[index];
 }
 
 function localstoragesend() {
