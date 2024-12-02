@@ -103,11 +103,11 @@ body {
     text-align: center;
     margin-top: 20px;
     width: 100%;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); /* Shadow at the top */
-    display: flex; /* Arrange content horizontally */
-    justify-content: space-around; /* Space between items */
-    align-items: center; /* Align items vertically */
-    padding: 20px; /* Add padding for spacing */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    padding: 20px;
 }
 
 .footer-icon {
@@ -120,21 +120,23 @@ body {
 .features {
     display: flex;
     margin: 0;
-    gap: 20px; /* Add spacing between feature items */
+    padding: 0px;
+    padding: 10px;
+    gap: 20px; 
 }
 
 .features-heading {
-    margin-left: 0; /* Remove left margin */
+    margin-left: 0; 
 }
 
 .info {
-    margin-left: 0; /* Remove left margin */
+    margin-left: 0;
     font-size: 15px;
 }
 
 .social-media-icon-container {
     display: flex;
-    gap: 10px; /* Add spacing between icons */
+    gap: 10px; 
 }
 
 .social-media-icon {
@@ -144,17 +146,17 @@ body {
 
 .footer-container {
     display: flex;
-    justify-content: space-between; /* Spread items across the footer */
-    align-items: center; /* Align items vertically */
+    justify-content: space-between; 
+    align-items: center;
     width: 100%;
+    padding: 20px;
 }
 
 .feature1-email-phone-location {
-    background-color: #cfcfcf;
     padding: 20px;
     width: auto;
     height: auto;
-    border-radius: 10px; /* Add rounded corners */
+    border-radius: 10px; 
 }
 
 .fb {
@@ -164,12 +166,12 @@ body {
     background-color: white;
     border-radius: 30px;
     margin-left: 10px;
-    transition: all 0.3s ease; /* Add smooth hover effect */
+    transition: all 0.3s ease; 
 }
 
 .fb:hover {
     position: relative;
-    top: -5px; /* Slight upward hover */
+    top: -5px; 
     box-shadow: 0 0 10px 3px rgba(162, 162, 162, 0.5);
 }
 

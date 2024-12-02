@@ -20,7 +20,7 @@ document.getElementById("footer").innerHTML = `
 <div class="footer-f">
         <div class="footer-container">
             <div class="feature1-email-phone-location">
-                <h4 class="features-hea>ding font-family ">Features</h4>
+                <h4 class="features-hea>ding font-family "></h4>
                 <div class="features-main text-centre font-family">
                     <div class="features">
                         <img src="/img/email.png" alt="E-mail" class="footer-icon">
@@ -34,13 +34,13 @@ document.getElementById("footer").innerHTML = `
 
                     <div class="features">
                         <img src="/img/location.png" alt="location" class="footer-icon">
-                        <p class="info">404, Laxmi Heights, Above Lotus Multi-speciality Hospital Shewalewadi(Hadapsar), Pune - 412307</p>
+                        <p class="info">404, Laxmi Heights, Above Lotus Multi-speciality Hospital <br> Shewalewadi(Hadapsar), Pune - 412307</p>
                     </div>
                 </div>
             </div>
 
             <div class="footer-coonect-us-container">
-                <h4 class="features-heading font-family">Conncet Us</h1>
+                <h2 class="features-heading font-family">Conncet with Us</h2>
                     <div class="fb-container">
                         <a href="https://www.facebook.com/nurserylive/" style="text-decoration: none;">
                             <img src="/img/facebook.png" alt="facebook" class="fb">
@@ -55,11 +55,12 @@ document.getElementById("footer").innerHTML = `
                             <img src="/img/instagram.png" alt="instagram" class="fb">
                         </a>
                     </div>
-                    <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500.0307940025006!2d73.79416121326348!3d18.598850116478292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91e0701ce81%3A0x6499f7f8d8cdf224!2sLotus%20Multi-specialty%20Hospital!5e1!3m2!1sen!2sin!4v1733145258212!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                    
 
             </div>
+            <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500.0307940025006!2d73.79416121326348!3d18.598850116478292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91e0701ce81%3A0x6499f7f8d8cdf224!2sLotus%20Multi-specialty%20Hospital!5e1!3m2!1sen!2sin!4v1733145258212!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
         </div>
     <footer class="footer">
         <p>&copy; 2024 HOT N' Fast Restaurant. All rights reserved.</p>
