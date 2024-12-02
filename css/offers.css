@@ -111,3 +111,64 @@
     transform: translateY(-5px);
     transition: transform 0.3s;
 }
+
+
+
+.title{
+  font-size: 24px;
+  margin: 30px;
+}
+.offer-cards{
+  display: flex;
+   
+}
+
+.offer-2{
+  text-decoration: none;
+  color: black;
+  
+}
+.cards {
+  height: 350px;
+  width: 250px;
+  display: flex;  /* Added flex to allow content to be centered */
+  flex-direction: column;  /* Optional, just to align content vertically inside the card */
+  justify-content: space-evenly;  /* Ensures space is properly distributed */
+  margin: 40px auto;  /* Centers the card horizontally and adds vertical space */
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 1px 1px 15px 2px rgb(171, 170, 170);
+  
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.card-header{
+  font-size: 22px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+.cards-pts{
+  margin: 7px;
+}
+
+.card-img{
+  display: block;
+  margin: 5px auto;
+  height: 220px;
+  width: 200px;
+  
+}
+.price{
+  text-decoration: none;
+  padding: 6px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+
+}

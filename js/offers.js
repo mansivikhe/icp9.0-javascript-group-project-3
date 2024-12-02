@@ -49,3 +49,11 @@ setInterval(() => {
     active = active >= count - 1 ? 0 : active + 1;
     runCarousel();
 }, autoSlideInterval);
+
+
+
+
+
+
+
+
