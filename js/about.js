@@ -6,7 +6,7 @@
 //   sidebarelement.style.visibility = "hiddedn";
 // }
 // document.addEventListener("DOMContentLoaded", () => {
-const imgArray1 = [
+let imgArray1 = [
   "../img/restaurant-hall",
   "../img/christmas.jpg",
   "../img/hygin.jpg",
@@ -14,8 +14,10 @@ const imgArray1 = [
   "../img/img3.jpg",
 ];
 let index = 0;
-const slide1 = document.getElementById("slide1");
-
+let slide1 = document.getElementById("imgslide");
+console.log(slide1);
+console.log(slide1);
+console.log(slide1);
 function next1() {
   if (index < imgArray1.length - 1) {
     index++;
@@ -39,13 +41,22 @@ function back1() {
 //   window.back1 = back1;
 // });
 function localstoragesend() {
-  alert("Thank You for visiting!");
   const name = document.getElementById("name").value;
-  localStorage.setItem("name", name);
   const email = document.getElementById("email").value;
-  localStorage.setItem("email", email);
   const contact = document.getElementById("contact").value;
-  localStorage.setItem("mobile", contact);
   const message = document.getElementById("message").value;
-  localStorage.setItem("message", message);
+  if (
+    name != "null" &&
+    email != "null" &&
+    contact != "null" &&
+    message != "null"
+  ) {
+    localStorage.setItem("name", name);
+    localStorage.setItem("email", email);
+    localStorage.setItem("mobile", contact);
+    localStorage.setItem("message", message);
+    alert("Thank You for visiting!");
+  } else {
+    alert("All fields are required");
+  }
 }
