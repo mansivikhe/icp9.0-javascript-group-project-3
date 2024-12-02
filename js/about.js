@@ -30,7 +30,9 @@ function nextSlide() {
   }
   slide1.src = imgArray1[index];
 }
-
+function closeModel() {
+  overlayid.style.display = "none";
+}
 function prevSlide() {
   if (index > 0) {
     index--;
