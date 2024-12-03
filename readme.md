@@ -19,11 +19,11 @@
 > * CSS
 > * JavaScript
 
-> * ## ScreenShot👉
+>  ## ScreenShot👉
 > * Home Page:
 
 >![Home Page](./img/Screenshot-home%20page.png)
 
-> * ## Contact👉
+>  ## Contact👉
 > * [GitHub](https://github.com/arbajjamadar46/icp9.0-javascript-group-project-3)
 > * [Website](https://hot-n-fast.netlify.app/)
