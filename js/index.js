@@ -80,6 +80,31 @@ function typeWriter() {
     }
 }
 typeWriter();
+//  slider
 
+const images = ["/img/img1.jpg", "/img/img2.jpg", "/img/img3.jpg", "/img/img4.jpg", "/img/img5.jpg","/img/img6.jpg","/img/img7.jpg"];
+        let index = 0;
+        const slide = document.getElementById('slide');
+        function next() {
+            if (index < images.length - 1) {
+                index++;
+            }
+            else {
+                index = 0;
+            }
+            index++;
+            slide.src = images[index];
+        }
+
+        function prev() {
+            if (index > 0) {
+                index--;
+            }
+            else {
+                index = images.length - 1;
+            }
+            slide.src = images[index];
+        }
+        /* setInterval(next, 3000);*/
 
 
