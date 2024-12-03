@@ -39,7 +39,7 @@ document.getElementById("footer").innerHTML = `
             </div>
 
             <div class="footer-coonect-us-container">
-                <h2 class="features-heading font-family">Conncet with Us</h2>
+                <h2 class="features-heading font-family">Connect with Us</h2>
                     <div class="fb-container">
                         <a href="https://www.facebook.com/" style="text-decoration: none;">
                             <img src="/img/facebook.png" alt="facebook" class="fb">
