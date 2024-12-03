@@ -76,15 +76,28 @@
         <hr />
         <p class="burger_text">
           Topped with cheddar, caramelized onions, bacon and horseradish aïoli,
-          the Marlowe burger is one of San Francisco’s best. An immediate hit
-          when it was introduced to the city in 2010, the Marlowe burger still
-          lives on many of the city’s “Best Burger” lists, including the ones by
-          Eater and The Infatuation.
+          the Hot'N burger is one of Pune’s best. An immediate hit when it was
+          introduced to the city in 2010, the Hot'N burger still lives on many
+          of the city’s “Best Burger” lists, including the ones by Eater and The
+          Infatuation.
         </p>
       </div>
       <div class="burger_img">
         <img src="../img/burger.jpg" alt="" class="burgerimg" />
       </div>
+    </div>
+    <div class="read_container">
+      <div class="read">
+        <p class="rea_def" onclick="read()">
+          Read the 2010 review that started it all..📰
+        </p>
+      </div>
+
+      <a
+        href="https://www.mashed.com/1134075/the-story-behind-the-rise-and-fall-of-hot-n-now/"
+      >
+        <img src="../img/tap.png" alt="" class="clickhere"
+      /></a>
     </div>
     <div class="carousel-container">
       <div class="carousel">
@@ -105,34 +118,31 @@
               relevant browsing experience on the website.
             </p>
             <div class="buttons">
-              <button class="button" id="acceptBtn" onclick="acceptBtn()">Accept</button>
-              <button class="button" id="declineBtn" onclick="dectBtn()">Decline</button>
+              <button class="button" id="acceptBtn" onclick="acceptBtn()">
+                Accept
+              </button>
+              <button class="button" id="declineBtn" onclick="dectBtn()">
+                Decline
+              </button>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="../img/friends.jpg" alt="Slide 1" id="imgslide" />
-        </div>
-        <!-- <div class="carousel-item">
-          <img src="../img/christmas.jpg" alt="Slide 2" />
-        </div>
-        <div class="carousel-item">
-          <img src="../img/hygin.jpg" alt="Slide 3" />
-        </div>
-        <div class="carousel-item">
-          <img src="../img/restaurant-hall.jpg" alt="Slide 4" />
-        </div> -->
       </div>
-      <button class="carousel-control prev" onclick="prevSlide()">
-        &#10094;
-      </button>
-      <button
-        class="carousel-control next"
-        onclick="nextSlide()"
-        class="nextSlide"
-      >
-        &#10095;
-      </button>
+      <div class="conitainer">
+        <img src="../img/friends.jpg" alt="friends" class="img" id="slide" />
+        <img
+          src="../img/back.png"
+          alt="back"
+          class="icon backimg"
+          onclick="back()"
+        />
+        <img
+          src="../img/next.png"
+          alt="next"
+          class="icon nextimg"
+          onclick="next()"
+        />
+      </div>
     </div>
     <form class="contact-form" action="submit_form.php" method="POST">
       <h2 class="heading-center">Contact Us</h2>

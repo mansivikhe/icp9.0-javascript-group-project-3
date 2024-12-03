@@ -49,12 +49,17 @@ body {
 }
 .the-hotn-text {
   display: block;
+
   margin: 30px auto;
   width: 600px;
   padding: 20px;
   text-align: center;
   font-size: 20px;
   background-color: whitesmoke;
+}
+.the-hotn-text:hover {
+  transform: scale(1.1);
+  transition: 2s;
 }
 p {
   line-height: 1.5;
@@ -70,7 +75,12 @@ p {
   position: relative;
   margin: 6px 50px 0px 50px;
 }
-
+.ourstory:hover {
+  margin: 20px;
+  transition: 2s;
+  transform: scale(1.1);
+  border-radius: 30px;
+}
 .overlay-text {
   font-size: 48px;
   font-weight: bold;
@@ -86,6 +96,10 @@ p {
   align-items: center;
   margin: 70px 70px auto;
   background-color: white;
+}
+.theburger_container:hover {
+  transform: scale(1.1);
+  transition: 3s;
 }
 .burger_def {
   width: 45%;
@@ -201,55 +215,38 @@ p {
 .contact-form button:hover {
   background: #b32e37;
 }
-.carousel-container {
+.conitainer {
+  width: fit-content;
+  margin: 50px auto;
   position: relative;
-  width: 100%;
-  margin: 20px auto;
-  width: 800px;
-  overflow: hidden;
-  border-radius: 10px;
 }
-
-.carousel {
-  display: flex;
-  /* transition: transform 0.5s ease-in-out; */
-}
-
-.carousel-item {
-  width: 800px;
-  /* box-sizing: border-box; */
-}
-
-.carousel-item img {
+.img {
   width: 800px;
   height: 500px;
   object-fit: cover;
+  border-radius: 20px;
 }
-
-.carousel-control {
+.icon {
+  height: 55px;
   position: absolute;
-  top: 50%;
-  /* transform: translateY(-50%); */
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  font-size: 1.2rem;
-  padding: 10px 20px;
   cursor: pointer;
-  /* z-index: 1000; */
-  border-radius: 50%;
+  transition: 1.2;
+  top: 42%;
 }
 
-.carousel-control.prev {
-  left: 10px;
+.backimg {
+  height: 43px;
+  left: 0;
 }
-
-.carousel-control.next {
-  right: 10px;
+.nextimg {
+  height: 35px;
+  right: 0;
 }
-
-.carousel-control:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+.backimg:hover {
+  transform: scale(0.9) translateX(-8px);
+}
+.nextimg:hover {
+  transform: scale(0.9) translateX(8px);
 }
 .overlay {
   background-color: rgb(0, 0, 0, 0.5);
@@ -304,4 +301,31 @@ p {
 }
 #acceptBtn {
   background-color: orange;
+}
+.read_container {
+  width: 500px;
+  /* height: 500px; */
+  display: block;
+  margin: 20px auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.read_container:hover {
+  transform: scale(1.1);
+  transition: 2s;
+}
+.rea_def {
+  text-decoration: none;
+  color: black;
+  /* text-shadow: 1px 2px 2px black; */
+  cursor: pointer;
+  font-size: 25px;
+}
+.read {
+  display: block;
+  margin-top: 30px auto;
+}
+.clickhere {
+  width: 40px;
+  padding: 2px;
 }
