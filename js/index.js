@@ -85,29 +85,25 @@ document.addEventListener("DOMContentLoaded", () => {
 // Slider functionality
 document.addEventListener("DOMContentLoaded", () => {
     const images = [
-        "/img/img1.jpg", "/img/img2.jpg", "/img/img3.jpg",
-        "/img/img4.jpg", "/img/img5.jpg", "/img/img6.jpg", "/img/img7.jpg"
+        "./img/img1.jpg", "./img/img2.jpg", "./img/img3.jpg",
+        "./img/img4.jpg", "./img/img5.jpg", "./img/img6.jpg", "./img/img7.jpg"
     ];
     let index = 0;
     const slide = document.getElementById('slide');
 
-    if (slide) {
-        function next() {
-            index = (index + 1) % images.length;
-            slide.src = images[index];
-        }
-
-        function prev() {
-            index = (index - 1 + images.length) % images.length;
-            slide.src = images[index];
-        }
-
-        document.getElementById('next').addEventListener('click', next);
-        document.getElementById('prev').addEventListener('click', prev);
-
-        // Optional: Auto-slide every 3 seconds
-        // setInterval(next, 3000);
-    } else {
-        console.error("Slider element not found.");
+    function next() {
+        index = (index + 1) % images.length; 
+        slide.src = images[index];
     }
+
+    function prev() {
+        index = (index - 1 + images.length) % images.length; 
+        slide.src = images[index];
+    }
+
+    window.next = next;
+    window.prev = prev;
+
+    setInterval(next, 3000);
 });
+
