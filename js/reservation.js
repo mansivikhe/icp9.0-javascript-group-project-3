@@ -1,21 +1,15 @@
+ // Show the selected form and hide others
 function openForm(formId) {
     const forms = document.querySelectorAll('.reservation-form');
     forms.forEach((form) => {
-        form.style.display = 'none'; 
+        form.style.display = 'none'; // Hide all forms
     });
-    document.getElementById(formId).style.display = 'block'; 
+    document.getElementById(formId).style.display = 'block'; // Show selected form
 }
 
+// Handle form submission and display a success message
 function handleSubmit(formId) {
-    const name = document.getElementById(`${formId}-name`).value; 
-    
-    // Show the alert
-    alert(`🎉 Reservation successful for ${name}.`);
-    
-    // Delay form reset to ensure the alert shows first
-    setTimeout(() => {
-        document.getElementById(formId).reset(); 
-    }, 500); // 500ms delay
-
-    return false; // Prevent the form from actually submitting
+    alert("Reservation is successful!");
+    return false; // Prevent page reload
 }
+

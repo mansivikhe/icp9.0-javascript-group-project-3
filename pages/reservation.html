@@ -49,6 +49,7 @@
         </section>
 
         <section id="reservation-forms">
+            <!-- Menu Reservation Form -->
             <div id="menuForm" class="reservation-form" style="display: none;">
                 <h2>Menu Reservation</h2>
                 <form onsubmit="return handleSubmit('menuForm')">
@@ -58,10 +59,12 @@
                     <input type="date" id="menu-date" required />
                     <input type="time" id="menu-time" required />
                     <input type="number" id="menu-guests" placeholder="Number of guests" required />
+                    <textarea id="menu-request" placeholder="Special requests (optional)" rows="4"></textarea>
                     <button type="submit">Submit</button>
                 </form>
             </div>
 
+            <!-- Order Pickup Form -->
             <div id="orderForm" class="reservation-form" style="display: none;">
                 <h2>Order Pickup</h2>
                 <form onsubmit="return handleSubmit('orderForm')">
@@ -75,6 +78,7 @@
                 </form>
             </div>
 
+            <!-- Event Booking Form -->
             <div id="eventForm" class="reservation-form" style="display: none;">
                 <h2>Event Booking</h2>
                 <form onsubmit="return handleSubmit('eventForm')">
@@ -83,6 +87,7 @@
                     <input type="tel" id="event-phone" placeholder="Enter your phone number" required />
                     <input type="date" id="event-date" required />
                     <textarea id="event-details" placeholder="Describe your event" rows="4" required></textarea>
+                    <input type="number" id="event-guests" placeholder="Number of attendees" required />
                     <button type="submit">Submit</button>
                 </form>
             </div>
