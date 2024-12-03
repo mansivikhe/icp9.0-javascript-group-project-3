@@ -25,16 +25,25 @@
         <div class="overlay" id="overlay">
             <div class="model">
                 <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModel()"/>
-                <form class="form">
+                <form class="form" action="submit_form.php" method="POST">
                     <h1 class="form-header"> Book an Event</h1>
                         <h1 class="form-header">Please select the area and time for your event</h1>
-                        <p>Select an area for your event</p>
                         
-                        <input type="name" placeholder="Select..." class="form-input"/>
-                        <p>Number of Guests</p>
-                    <input type="text" class="form-input"/>
-                    <p>Minimum guest count is 9 guests. provided doesn't meet our minimum required number of guests.</p>
-                    <button type="button" class="btn" onclick="closeModel()">Submit </button>
+                        <label for="name">Select an area for your event</label>
+                        <input type="text"
+                         placeholder="Select..." 
+                        class="form-input"
+                           id="name"
+                        name="name"
+                        required/>
+                        
+                      
+                        <label for="email">No. of guest</label>
+                    <input type="number" class="form-input"
+                   
+                    />
+                    
+                    <button type="button" class="btn" onclick="closeModel()" > Submit </button>
             </div>
         </div>
         <button class="inquire-now" type="button"  onclick="openModal()">INQUIRE NOW</button>
