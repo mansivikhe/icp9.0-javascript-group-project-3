@@ -18,3 +18,5 @@ function closeModel() {
     const overlayElement = document.getElementById('overlay');
     overlayElement.style.display = 'none';
 }
+
+
