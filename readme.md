@@ -15,9 +15,9 @@
 
 > ## Technologies Used👉
 > Specify the technologies used in the project:
-> * HTML
-> * CSS
-> * JavaScript
+> * **HTML**
+> * **CSS**
+> * **JavaScript**
 
 >  ## ScreenShot👉
 > * Home Page:
