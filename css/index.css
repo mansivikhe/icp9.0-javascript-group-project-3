@@ -35,6 +35,12 @@ body {
     
 }
 
+.sidebar{
+    height: 25px;
+    width: 25px;
+    visibility: hidden;
+}
+
 .navbar-links a {
     color: black;
     text-decoration: none;
@@ -296,6 +302,86 @@ h1 {
     bottom: 0;
 }
     
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .sidebar {
+        visibility: visible;
+        display: block; 
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .img-box,.left-box{
+        display: none;
+    }
+    .silde {
+        height: 400px; 
+    }
+
+    .ico-action {
+        height: 30px; 
+    }
+
+    .hero-content {
+        font-size: 16px; 
+    }
+
+    .hero-content h1 {
+        font-size: 20px; 
+        top: 200px;
+        right: 50px;
+    }
+
+    .hero-content p {
+        font-size: 14px; 
+        bottom: 100px;
+        left: 20px;
+    }
+
+    .container-2,
+    .container-3 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-box,
+    .content-box,
+    .right-box,
+    .left-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-img {
+        visibility: hidden;
+    }
+
+    .content-btn {
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .social-media-icon-container {
+        justify-content: center;
+    }
+
+    .fb {
+        margin: 10px auto;
+    }
+}
+
     
 
 

@@ -1,6 +1,7 @@
 // Inject the navbar dynamically
 document.getElementById("navbar").innerHTML = `
     <div class="navbar-container">
+        <img src="../img/sidebar.png" alt="sidebar" class="sidebar">
         <img src="../img/Logo.png" alt="Logo" class="navbar-logo">
         <div class="navbar-links">
             <a href="../index.html">Home</a>
