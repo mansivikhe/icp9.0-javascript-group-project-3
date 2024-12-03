@@ -1,4 +1,3 @@
-
 function openForm(formId) {
     const forms = document.querySelectorAll('.reservation-form');
     forms.forEach((form) => {
