@@ -1,26 +1,22 @@
+// Function to show the selected form and hide others
 function openForm(formId) {
-    
     const forms = document.querySelectorAll('.reservation-form');
-    forms.forEach(function(form) {
-        form.style.display = 'none';
+    forms.forEach((form) => {
+        form.style.display = 'none'; // Hide all forms
     });
-    
-    const selectedForm = document.getElementById(formId);
-    selectedForm.style.display = 'block';
+    document.getElementById(formId).style.display = 'block'; // Show the selected form
 }
 
+// Function to handle form submission
 function handleSubmit(formId) {
-
-    const name = document.getElementById(formId + '-name').value;
-    const email = document.getElementById(formId + '-email').value;
-    const phone = document.getElementById(formId + '-phone').value;
-    const date = document.getElementById(formId + '-date').value;
-    const time = document.getElementById(formId + '-time').value;
-    const guests = document.getElementById(formId + '-guests').value;
-
-    alert(`🎉 Your reservation has been confirmed! We can't wait to see you soon. 😊\n\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nDate: ${date}\nTime: ${time}\nGuests: ${guests}`);
-
+    const name = document.getElementById(`${formId}-name`).value; // Get the name from the form
+    
+    // Show the alert
+    alert(`🎉 Reservation successful for ${name}.`);
+    
+    // Reset the form fields
     document.getElementById(formId).reset();
-
+    
+    // Prevent actual form submission
     return false;
 }
