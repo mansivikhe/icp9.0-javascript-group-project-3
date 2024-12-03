@@ -131,6 +131,14 @@ margin-top: 30px;
     position: relative;
 }
 
+.modal{
+    background-color:white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
 .close-icon{
     position: absolute;
     top: 5px;
