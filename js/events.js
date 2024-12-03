@@ -8,12 +8,12 @@ function closeModel(){
     overlayElement.style.display= 'none';
 }
 
-function openDivision(){
+function openModal(){
     const divisionElement = document.getElementById('division');
     divisionElement.style.display= 'flex';
 }
 
-function closeDivision(){
+function closeModal(){
     const overlayElement = document.getElementById('division');
     divisionElement.style.display= 'none';
 }
