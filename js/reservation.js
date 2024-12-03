@@ -12,7 +12,10 @@ function handleSubmit(formId) {
     // Show the alert
     alert(`🎉 Reservation successful for ${name}.`);
     
-    document.getElementById(formId).reset();
-    
-    return false;
+    // Delay form reset to ensure the alert shows first
+    setTimeout(() => {
+        document.getElementById(formId).reset(); 
+    }, 500); // 500ms delay
+
+    return false; // Prevent the form from actually submitting
 }
