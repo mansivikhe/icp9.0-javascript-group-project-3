@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./../css/index.css">
     <link rel="stylesheet" href="./../css/events.css">
     <script src="./../js/events.js" ></script>
-    <script src="./../js/offers.js" ></script>
     <script src="/../js/index.js" defer></script>
 </head>
 <body>
@@ -18,37 +17,9 @@
         
          <!-- Add event details here -->
 
-       
-
-  <div class="slider">
-    <div class="list">
-      <div class="item">
-        <img src="./../img/event/1.jpg"  class="img1"  alt="Offer 1">
-      </div>
-      <div class="item">
-        <img src="./../img/event/2.jpg"  class="img1"  alt="Offer 2">
-      </div>
-      <div class="item">
-        <img src="./../img/event/rehearsal-dinners.webp"  class="img1"  alt="Offer 3">
-      </div>
-      <div class="item">
-        <img src="./../img/event/4.avif"   class="img1" alt="Offer 4">
-      </div>
-      <div class="item">
-        <img src="./../img/event/3.jpg"  class="img1"  alt="Offer 5">
-      </div>
-     
-      </div>
-    </div>
-
-    <div class="arow">
-      <button id="prev"> &lt; </button>
-      <button id="next"> &gt; </button>
-    </div>
-  
          
-         
-             
+            <img src="./../img/2.jpg" class="img1" id=/>
+            
  <p class="heading">If you have a specific date in mind and are planning a standard event, you may choose to DIRECT BOOK. Otherwise, to discuss availability, pricing, and other specific needs, please choose INQUIRE NOW and we’ll be in touch soon. </p>
         <button class="direct-book" onclick="openModel()">DIRECT BOOK</button>
         <div class="overlay" id="overlay">
@@ -79,23 +50,27 @@
         <div class="division" id="division">
             <div class="modal">
                 <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModal()"/>
-                <form class="form">
+                <form class="form" onsubmit="return handleSubmit('eventForm')">
                     <h1 class="form-header">
                         Your Contact Information</h1>
-                     <input type="name" placeholder="Enter your name" class="form-input"/><br>
-                    <input type="email" placeholder="Enter your email" class="form-input"/><br>
-                    <input type="text" placeholder="Enter your phone number" class="form-input"/>
+                     <input type="text" id=event-name" placeholder="Enter your name" class="form-input" required/><br>
+                     <input type="text" id="event-name" placeholder="Enter your name" class="form-input" required /><br>
+                    <input type="email" placeholder="Enter your email" class="form-input" class="form-input" required/><br>
+                    <input type="tel" id="event-phone" placeholder="Enter your phone number" class="form-input" required/>
                     <p>In order to submit your personal information you must agree to and accept the terms of Hot N Fast privacy policy.</p>
-                </form>
+                
                 <h1>Your Event Details</h1>
-                 <input type="text" placeholder="Enter your event date" class="form-input"/>
-                <p>Start Time & End Time</p>
-                <input type="text" placeholder="6:00pm - 9:00pm" class="form-input"/>
-                 <input type="text" placeholder="No. of people" class="form-input"/>
-                <button type="button" class="btn"  onclick="closeModal()">Submit </button>
+                 <input type="text" placeholder="Enter your event date" class="form-input" />
+                <input type="date" placeholder="6:00pm - 9:00pm" class="form-input"/>
+               <br>
+                <input type="time" id="event-time" required />
+                 <input type="number" id="event-guests" placeholder="No. of guest" class="form-input" required/>
+                <button type="submit" class="btn" >Submit </button>
+                </form>
             </div>
         </div>
-        
+
+       
     
         <p>Stay updated on our latest events and activities!</p>
         <div class="container">
