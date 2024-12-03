@@ -47,30 +47,27 @@
             </div>
         </div>
         <button class="inquire-now" type="button"  onclick="openModal()">INQUIRE NOW</button>
-        <div class="division" id="division">
+        <div class="reservation-form" id="eventForm">
             <div class="modal">
                 <img src="./../img/event/cross.png" class="close-icon" alt="Close" onclick="closeModal()"/>
-                <form class="form" onsubmit="return handleSubmit('eventForm')">
+                <form onsubmit="return handleSubmit('eventForm')" class="form">
                     <h1 class="form-header">
                         Your Contact Information</h1>
-                     <input type="text" id=event-name" placeholder="Enter your name" class="form-input" required/><br>
-                     <input type="text" id="event-name" placeholder="Enter your name" class="form-input" required /><br>
-                    <input type="email" placeholder="Enter your email" class="form-input" class="form-input" required/><br>
+                     <input type="text" id="event-name" placeholder="Enter your name" class="form-input" required/><br>
+                     <input type="email" id="event-email"  placeholder="Enter your email" class="form-input"  required/><br>
                     <input type="tel" id="event-phone" placeholder="Enter your phone number" class="form-input" required/>
                     <p>In order to submit your personal information you must agree to and accept the terms of Hot N Fast privacy policy.</p>
-                
-                <h1>Your Event Details</h1>
-                 <input type="text" placeholder="Enter your event date" class="form-input" />
-                <input type="date" placeholder="6:00pm - 9:00pm" class="form-input"/>
+                <h1 class="form-header">Your Event Details</h1>
+                <input type="text" id="event-name" placeholder="Event description" class="form-input" required/><br>
+                <input type="date" id="event-date" class="form-input" required /><br>
+                <input type="time" id="event-time"  class="form-input" required/>
                <br>
-                <input type="time" id="event-time" required />
-                 <input type="number" id="event-guests" placeholder="No. of guest" class="form-input" required/>
-                <button type="submit" class="btn" >Submit </button>
+                <input type="number" id="event-guests" placeholder="Number of guests" class="form-input" required/><br>
+                <button type="submit" onclick="closeModal()" >Submit </button>
                 </form>
             </div>
         </div>
 
-       
     
         <p>Stay updated on our latest events and activities!</p>
         <div class="container">

@@ -13,15 +13,26 @@ function closeModel() {
 
 
 function openModal() {
-    const divisionElement = document.getElementById('division');
-    divisionElement.style.display = 'flex';
+    const eventFormElement = document.getElementById('eventForm');
+    eventFormElement.style.display = 'flex';
 }
 
 function closeModal() {
-    const divisionElement = document.getElementById('division');
-    divisionElement.style.display = 'none';
+    const eventFormElement = document.getElementById('eventForm');
+    eventFormElement.style.display = 'none';
 }
 
+
+function openForm(formId) {
+    
+    const forms = document.querySelectorAll('.reservation-form');
+    forms.forEach(function(form) {
+        form.style.display = 'none';
+    });
+    
+    const selectedForm = document.getElementById(formId);
+    selectedForm.style.display = 'block';
+}
 
 function handleSubmit(formId) {
 
