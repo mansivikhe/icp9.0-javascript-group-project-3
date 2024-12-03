@@ -6,3 +6,9 @@
 > ## Goal👉
 > #### To enhance the dining experience by offering a user-friendly online interface for reservations, menu exploration, and promotions.
 
+> ##  Features👉
+> * Interactive menu with images and descriptions.
+> * Online table reservation system.
+> * Contact form for inquiries.
+> * Responsive design for mobile and desktop devices.
+> * Integration with Google Maps for directions.
