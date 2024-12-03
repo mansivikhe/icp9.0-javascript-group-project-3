@@ -12,3 +12,9 @@
 > * Contact form for inquiries.
 > * Responsive design for mobile and desktop devices.
 > * Integration with Google Maps for directions.
+
+> ## Technologies Used👉
+> Specify the technologies used in the project:
+> * HTML
+> * CSS
+> * JavaScript
