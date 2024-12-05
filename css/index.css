@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif, roboto;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 /* Navbar Styling */
@@ -11,7 +12,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-container {
@@ -35,6 +35,12 @@ body {
     
 }
 
+.sidebar{
+    height: 25px;
+    width: 25px;
+    visibility: hidden;
+}
+
 .navbar-links a {
     color: black;
     text-decoration: none;
@@ -52,127 +58,135 @@ body {
 }
 
 /* Hero Section */
-.hero-section {
-    background-image: url('/img/home-bg.jpg'); 
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
+.silde {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+.ico-action {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.icon-prev {
+    left: 0;
 }
 
-.hero-section::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    z-index: 1;
+.icon-next {
+    right: 0;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin: 0;
-    color: #fff;
+    color: white;
+    font-size: 23px;
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 270px;
+    left: 550px;
+}
+
+.hero-content h1 {
+    position: absolute;
+    color: white;
+    top: 280px;
+    right: 300px;
 }
 
 /* Footer Styling */
+.footer-f{
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
 .footer {
     background-color: #fff;
     color: black;
     text-align: center;
     margin-top: 20px;
     width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    padding: 20px;
 }
 
-.footer-icon{
+.footer-icon {
     height: 30px;
     background-color: white;
     padding: 5px;
     border-radius: 10px;
 }
 
-.features{
+.features {
     display: flex;
-    margin-bottom: 0px;
+    margin: 0;
+    padding: 0px;
+    padding: 10px;
+    gap: 20px; 
 }
 
-.features-heading{
-  margin-left: 100px;
+.features-heading {
+    margin-left: 0; 
 }
 
-.info{
-    margin-left: 15px;
-    position: relative;
-    bottom: 10px;
+.info {
+    margin-left: 0;
     font-size: 15px;
 }
 
-.social-media-icon-container{
+.social-media-icon-container {
     display: flex;
+    gap: 10px; 
 }
 
-.social-media-icon{
+.social-media-icon {
     height: 20px;
-    margin-left: 15px;
-}
-
-.footer-container{
-    display: flex;
-}
-
-.feature1-email-phone-location{
-    background-color: #65AA98;
-    padding-left: 100px;
-    width: 400px;
-    height: 300px;
-    padding-top: 80px;
-}
-
-.social-media-icon-container{
-    background-color: brown;
-}
-
-.fb{
-    height: 30px;
-    padding-left: 20px;
     cursor: pointer;
-    background-color: white;padding: 10px;
-    border-radius: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+}
+
+.feature1-email-phone-location {
+    padding: 20px;
+    width: auto;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.fb {
+    height: 30px;
     padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 30px;
     margin-left: 10px;
+    transition: all 0.3s ease; 
 }
 
-.fb:hover{
+.fb:hover {
     position: relative;
-    top: 10px;
-    box-shadow: 0px 0px 5px 3px rgb(162, 162, 162);
-    
+    top: -5px; 
+    box-shadow: 0 0 10px 3px rgba(162, 162, 162, 0.5);
 }
 
-.fb-container{
-    margin-left: 30px;
+.fb-container {
+    margin-left: 0;
 }
+
 
 /* Main Content Styling */
 main {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
 }
 
@@ -222,7 +236,7 @@ h1 {
     border: none;
     font-size: 15px;
     color: white;
-    background-color:#322C2B;
+    background-color: black;
 }
 .content-btn:hover{
     background-color: #AF8260;
@@ -288,6 +302,86 @@ h1 {
     bottom: 0;
 }
     
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+
+    .sidebar {
+        visibility: visible;
+        display: block; 
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    .img-box,.left-box{
+        display: none;
+    }
+    .silde {
+        height: 400px; 
+    }
+
+    .ico-action {
+        height: 30px; 
+    }
+
+    .hero-content {
+        font-size: 16px; 
+    }
+
+    .hero-content h1 {
+        font-size: 20px; 
+        top: 200px;
+        right: 50px;
+    }
+
+    .hero-content p {
+        font-size: 14px; 
+        bottom: 100px;
+        left: 20px;
+    }
+
+    .container-2,
+    .container-3 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .img-box,
+    .content-box,
+    .right-box,
+    .left-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-img {
+        visibility: hidden;
+    }
+
+    .content-btn {
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .social-media-icon-container {
+        justify-content: center;
+    }
+
+    .fb {
+        margin: 10px auto;
+    }
+}
+
     
 
 
